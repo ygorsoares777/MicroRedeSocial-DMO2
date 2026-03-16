@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "130735937617",
+    "project_id": "microredesocialygor-af3e1",
+    "storage_bucket": "microredesocialygor-af3e1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130735937617:android:4cd742362414821146c070",
+        "android_client_info": {
+          "package_name": "br.com.ygor.microredesocialygor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYWeOsupECzshIqnr0Cy-BpFtox0ZZFzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

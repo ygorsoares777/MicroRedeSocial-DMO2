@@ -1,4 +1,4 @@
-package br.com.ygor.microredesocialygor
+package br.com.ygor.microredesocialygor.ui
 
 class HomeActivity {
 }

@@ -24,4 +24,12 @@ class UserAuth {
     fun isUserLoggedIn(): Boolean = auth.currentUser != null
 
     fun logout() = auth.signOut()
+
+    fun atualizarSenha(novaSenha: String, callback: (Boolean, String?) -> Unit) {
+        val user = auth.currentUser
+        user?.updatePassword(novaSenha)
+            ?.addOnCompleteListener { task ->
+                callback(task.isSuccessful, task.exception?.message)
+            }
+    }
 }

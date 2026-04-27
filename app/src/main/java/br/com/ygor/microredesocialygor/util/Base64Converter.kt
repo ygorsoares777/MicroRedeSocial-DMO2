@@ -14,7 +14,6 @@ fun Bitmap.scale(width: Int, height: Int): Bitmap {
 class Base64Converter {
     companion object {
 
-        // Para foto de perfil (150x150)
         fun drawableToString(drawable: Drawable): String {
             val pictureDrawable = drawable as BitmapDrawable
             val bitmap = pictureDrawable.bitmap.scale(150, 150)
@@ -23,12 +22,10 @@ class Base64Converter {
             return Base64.encodeToString(outputStream.toByteArray(), 0)
         }
 
-        // Para posts (mantém qualidade - até 800px)
         fun drawableToStringPost(drawable: Drawable): String {
             val pictureDrawable = drawable as BitmapDrawable
             val bitmapOriginal = pictureDrawable.bitmap
 
-            // Redimensiona mantendo proporção (largura máxima 800)
             val width = if (bitmapOriginal.width > 800) 800 else bitmapOriginal.width
             val height = (bitmapOriginal.height * width / bitmapOriginal.width)
             val bitmap = bitmapOriginal.scale(width, height)

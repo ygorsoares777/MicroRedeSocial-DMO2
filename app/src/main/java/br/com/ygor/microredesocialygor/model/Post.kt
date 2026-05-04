@@ -5,7 +5,7 @@ data class Post(
     val userId: String = "",
     val authorName: String = "",
     val authorPhoto: String = "",
-    val imageUrl: String = "",  // ✅ Será Base64
+    val imageUrl: String = "",
     val descricao: String = "",
     val cidade: String = "",
     val latitude: Double = 0.0,

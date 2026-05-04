@@ -16,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // RF1-4: Auto-redirecionamento se já estiver logado
+
         if (userAuth.isUserLoggedIn()) {
             startActivity(Intent(this, HomeActivity::class.java))
             finish()

@@ -34,7 +34,7 @@ class ProfileActivity : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Configurar Toolbar com botão voltar
+
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowTitleEnabled(false)
@@ -63,7 +63,7 @@ class ProfileActivity : AppCompatActivity() {
                                 val bitmap = Base64Converter.stringToBitmap(fotoString)
                                 binding.imgFotoPerfil.setImageBitmap(bitmap)
                             } catch (e: Exception) {
-                                // Mantém imagem padrão
+
                             }
                         }
                     }

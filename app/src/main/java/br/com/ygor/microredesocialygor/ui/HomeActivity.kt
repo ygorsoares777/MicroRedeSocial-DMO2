@@ -2,6 +2,7 @@ package br.com.ygor.microredesocialygor.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -103,8 +104,11 @@ class HomeActivity : AppCompatActivity() {
         adapter.clear()
         lastDocument = null
 
+
+        val cidadeBusca = cidade.lowercase().trim()
+
         db.collection("posts")
-            .whereEqualTo("cidade", cidade)
+            .whereEqualTo("cidade", cidadeBusca)
             .orderBy("createdAt", Query.Direction.DESCENDING)
             .limit(POSTS_PER_PAGE.toLong())
             .get()
@@ -119,8 +123,9 @@ class HomeActivity : AppCompatActivity() {
                 }
                 mostrarProgresso(false)
             }
-            .addOnFailureListener {
+            .addOnFailureListener {exception ->
                 mostrarProgresso(false)
+                Log.e("BUSCA_POSTS", "Erro na busca", exception)
                 Toast.makeText(this, "Erro na busca", Toast.LENGTH_SHORT).show()
             }
     }
@@ -177,7 +182,7 @@ class HomeActivity : AppCompatActivity() {
                                 val bitmap = Base64Converter.stringToBitmap(fotoString)
                                 binding.imgFotoPerfil.setImageBitmap(bitmap)
                             } catch (e: Exception) {
-                                // Mantém imagem padrão
+
                             }
                         }
                     }

@@ -201,7 +201,7 @@ class CreatePostActivity : AppCompatActivity() {
             authorPhoto = authorPhoto,
             imageUrl = imagemBase64,
             descricao = descricao,
-            cidade = cidadeAtual,
+            cidade = cidadeAtual.lowercase(),
             latitude = latitude,
             longitude = longitude,
             createdAt = System.currentTimeMillis()

@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Selecionar Imagem -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Campo Descrição -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <!-- Campo Cidade (opcional, automático) -->
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
                 android:orientation="horizontal"
                 android:gravity="center_vertical">
 
-                <!-- Ícone de localização (nativo do Android) -->
+
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
@@ -132,7 +132,7 @@
 
             </LinearLayout>
 
-            <!-- Botão Publicar -->
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnPublicar"
                 android:layout_width="match_parent"
@@ -145,7 +145,7 @@
                 app:cornerRadius="28dp"
                 android:layout_marginTop="24dp" />
 
-            <!-- Botão Cancelar -->
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCancelar"
                 android:layout_width="match_parent"
@@ -159,7 +159,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="16dp" />
 
-            <!-- ProgressBar -->
+
             <ProgressBar
                 android:id="@+id/progressBar"
                 android:layout_width="wrap_content"

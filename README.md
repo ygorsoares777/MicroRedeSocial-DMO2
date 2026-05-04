@@ -64,7 +64,14 @@ O aplicativo foi desenvolvido como parte da disciplina **Dispositivos Móveis 2*
 
 https://github.com/user-attachments/assets/ef3b0f8d-60a3-4bd3-a460-74d76736bfa0
 
+---
 
+## 🎥 Vídeo de Apresentação
+
+Neste vídeo é apresentada a explicação da implementação do projeto, detalhando as principais partes do código e sua lógica de funcionamento.
+
+
+[![YouTube](https://img.shields.io/badge/YouTube-Assista%20ao%20Vídeo-red?logo=youtube)](https://youtu.be/B7sR9GHAhrs)
 
 
 
